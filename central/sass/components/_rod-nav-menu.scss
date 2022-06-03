@@ -1,0 +1,138 @@
+/* ============================= */
+/* components/rod-nav-menu */
+/* Use: For megasites and multi-level navigation on mobile phones*/
+/* 100% SASS Portable */
+/* Content: */
+/* header-box */
+/* nav-menu */
+/* ============================= */
+
+// Para remover indentación de niveles
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-menu {
+  display: block;
+
+  &__wrapper {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-weight: 200;
+    left: 0;
+    height: calc(100vh - 71px);
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+    }
+    & ul {
+      // Automatic NEXT arrows for li that has a child
+      & > li {
+        list-style-type: none;
+
+        & > a:not(:last-child):after {
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 10;
+          content: "\f061";
+        }
+      }
+    }
+    // Automatic BACK arrow on first li level 1
+
+    & > ul > li > ul > li:nth-child(1) {
+      background-color: green;
+      & > a:before {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 10;
+        content: "\f060\2002"; // Second number is the space
+      }
+    }
+    // Automatic BACK arrow on first li level 2
+    & > ul > li > ul > li > ul > li:nth-child(1) {
+      background-color: green;
+      & > a:before {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 10;
+        content: "\f060\2002"; // Second number is the space
+      }
+    }
+
+    &--open {
+      -webkit-transform: translate3d(0, 0, 0); // Mantiene el tamaño del header
+    }
+
+    > ul.nav-menu > li {
+      //Menu level 1
+      & > a {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        line-height: 1.2;
+        padding: 20px 30px 20px 0;
+        font-size: 1.2rem;
+        width: 100%;
+      }
+
+      //Menu level 2
+      & > ul > li > a {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        line-height: 1.2;
+        padding: 20px 30px 20px 0;
+        font-size: 1.2rem;
+      }
+      //Menu level 2 first li Arrow and Text align left
+      & > ul > li:nth-child(1) > a {
+        display: flex;
+        justify-content: flex-start;
+      }
+      // Menu level 3
+      & > ul > li > ul > li > a {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid #fff;
+        line-height: 1.2;
+        padding: 20px 30px 20px 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/* Buttons */
+ul.nav-menu > li > a.action-button {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin: 24px 0;
+  width: 50%;
+
+  &__primary {
+    display: block;
+    background-color: #7c01ff;
+    color: #fff;
+  }
+  &__secondary {
+    display: block;
+    background-color: #fff;
+    color: #7c01ff;
+  }
+}

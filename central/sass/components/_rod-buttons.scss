@@ -1,0 +1,45 @@
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
+
+section,
+ul {
+  padding: 0px;
+}
+
+.lateral-padding {
+  padding: 0 10px;
+}
+
+.section-separation {
+  /* Line separator */
+  padding-top: 45px;
+  padding-bottom: 60px;
+
+  box-shadow: 0 80px 0 -79px rgb(148, 148, 148); /* negative number need to be smaller */
+  /* Line separator */
+}
+
+.header-box {
+  height: 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; //needed to avoid child button height change
+  border-bottom: 1px solid #dbdbdb;
+
+  &__brand {
+    color: #393939;
+    font-size: 18px;
+  }
+  &__button-pill-menu {
+    padding: 5px 20px;
+    width: 115px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 16px;
+    color: #393939;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+
+    cursor: pointer;
+  }
+}

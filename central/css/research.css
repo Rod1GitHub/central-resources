@@ -1,0 +1,48 @@
+.system-colors {
+  background-color: #fefbed;
+  background-color: #f7f7f7;
+}
+
+.dyslexia {
+  /* Source: 
+https://cdn.bdadyslexia.org.uk/uploads/documents/Advice/style-guide/Dyslexia_Style_Guide_2018-final-1.pdf?v=1554827990
+ */
+  background-color: #fefbed;
+  /* background-color: #f7f7f7; */
+  font-family: UniversNext, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Arial and Comic Sans, Verdana, Tahoma, Century Gothic, Trebuchet, Calibri, Open Sans  */
+  font-size: 19px;
+  /* 16 - 19 px */
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  /* word-spacing: 0.25em; */
+  word-spacing: -2px;
+  line-height: 1.3;
+}
+
+/* buttons
+https://getcssscan.com/css-buttons-examples */
+
+/* visual affordance: a button should look like a button. Flat design is not good for a button affordance.same with links. If you can click it, underline it. Ugly, yes, undersandable, yes. Look like what you are 
+Relevante y apropiado
+Mental model, what user expect.
+Cuál es el exito esperado por el usuario (tarea por hacer cumplida), y cual es la interface que lo permite
+- outcome, not features
+- features, functions, form
+- comunicate the value using visual design
+- visual complexity put people away from the product
+- include only what is useful for the task, the job to be done
+- click and fill in interaction affordance, look slike what it is
+- looks like interactive if it is interactive
+- use Icon + Label, not icons only, or labels only
+- fat fingers 48px x 48px minimun size for and between clickcable interactions on mobile.
+- visually, when too many elements, group them.
+- reduce cognitive effort (vusually group elements)
+- balancing negative and positive space 
+- reading left to right
+- diseño para que la gente no abandone la página, contenido para la tarea por hacer
+- elemento dominante 1, 2 y 3., Punto de entrada visual
+- visual anomally wins the atention
+- design the negative space
+- visual hierarchie
+*/
