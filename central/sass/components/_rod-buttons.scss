@@ -6,7 +6,7 @@ ul {
 }
 
 .lateral-padding {
-  padding: 0 10px;
+  padding: 2vw;
 }
 
 .section-separation {
@@ -16,6 +16,10 @@ ul {
 
   box-shadow: 0 80px 0 -79px rgb(148, 148, 148); /* negative number need to be smaller */
   /* Line separator */
+}
+
+h2 {
+  padding: 0px 0px 10px 0px;
 }
 
 .header-box {
@@ -30,8 +34,9 @@ ul {
     font-size: 18px;
   }
   &__button-pill-menu {
+    box-sizing: border-box;
     padding: 5px 20px;
-    width: 115px;
+    width: 30vw;
     border-radius: 5px;
 
     text-decoration: none;

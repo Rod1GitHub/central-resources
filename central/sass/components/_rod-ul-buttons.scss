@@ -1,5 +1,5 @@
 /* ============================= */
-/* components/rod-nav-buttons */
+/* components/rod-ul-buttons */
 /* Use: Buttons for ul and li */
 /* 100% SASS Portable */
 /* Content: */
@@ -18,6 +18,7 @@ ul-button-instant-contact */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  gap: 2vw 2vw;
 
   & > li {
     display: inline-flex;
@@ -46,7 +47,7 @@ ul-button-instant-contact */
 }
 
 .ul-button-instant-contact {
-  justify-content: flex-start;
+  justify-content: flex-end;
   line-height: 32px;
 }
 
@@ -59,10 +60,11 @@ ul-button-instant-contact */
   }
 
   & > li {
-    width: 30vw;
+    box-sizing: border-box;
+    width: 28vw;
     max-width: 150px;
     min-width: 115px;
-    height: 30vw; /* same as width */
+    height: 28vw; /* same as width */
     max-height: 150px;
     min-width: 115px;
   }
@@ -80,40 +82,50 @@ ul-button-instant-contact */
 }
 
 .ul-button-rectangle-image {
+  gap: 10vw 2vw;
   & > li {
-    width: 48%;
+    box-sizing: border-box;
+    width: 46vw;
+    max-width: 200px;
+    padding: 0px;
+  }
+  & > li > a {
+    min-width: 100%;
   }
 
   & > li > a > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     border-bottom: 1px solid #dbdbdb;
 
     object-fit: cover;
-
-    box-sizing: content-box;
-    width: 100%;
-    height: 130px;
   }
 
   & > li > a > span {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
     text-align: center;
 
-    overflow-wrap: break-word;
-    inline-size: 100%; // text space */
-
     height: 70px;
-
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    padding: 0px 8px 0px 8px;
   }
 }
 
 .ul-button-rectangle-no-image {
+  gap: 5vw 2vw;
   & > li {
-    width: 48%;
+    box-sizing: border-box;
+    width: 46vw;
   }
+}
+
+.ul-button-link {
+  gap: 3vw 2vw;
 }
