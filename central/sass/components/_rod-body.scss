@@ -1,3 +1,25 @@
 body {
   background-color: #f8f8f8;
 }
+
+section,
+ul {
+  padding: 0px;
+}
+
+.lateral-padding {
+  padding: 2vw;
+}
+
+.section-separation {
+  /* Line separator */
+  padding-top: 45px;
+  padding-bottom: 60px;
+
+  box-shadow: 0 80px 0 -79px rgb(148, 148, 148); /* negative number need to be smaller */
+  /* Line separator */
+}
+
+h2 {
+  padding: 0px 0px 10px 0px;
+}
